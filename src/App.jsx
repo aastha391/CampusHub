@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AppProvider, useApp } from './context/AppContext';
-import LoginPage from './pages/LoginPage';
+import Login from './pages/Login';
 import Layout from './components/Layout';
 import Toast from './components/Toast';
 import Dashboard from './pages/Dashboard';
@@ -15,10 +15,10 @@ import AdminPage from './pages/AdminPage';
 import './index.css';
 
 function AppContent() {
-  const { user } = useApp();
+  const { user ,login} = useApp();
   const [page, setPage] = useState('dashboard');
 
-  if (!user) return <LoginPage />;
+  if (!user) return <Login onLogin={login}/>;
 
   const pages = {
     dashboard: <Dashboard setPage={setPage} />,
