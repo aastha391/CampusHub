@@ -1,3 +1,4 @@
+import '../styles/pages.css';
 import { BookOpen, FileText, Lightbulb, ExternalLink, Briefcase, GraduationCap } from 'lucide-react';
 
 const RESOURCES = [

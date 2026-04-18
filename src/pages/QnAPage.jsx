@@ -1,3 +1,4 @@
+import '../styles/pages.css';
 import { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { MessageSquare, ThumbsUp, Plus, Package, AlertCircle, CheckCircle } from 'lucide-react';

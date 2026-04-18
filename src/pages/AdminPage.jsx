@@ -1,3 +1,4 @@
+import '../styles/admin.css';
 import { useState } from 'react';
 import { useApp, MOCK_USERS } from '../context/AppContext';
 import { Shield, CheckCircle, Trash2, Plus, BarChart3, Users, FileText, Megaphone, Calendar } from 'lucide-react';

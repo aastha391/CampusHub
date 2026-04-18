@@ -1,3 +1,4 @@
+import '../styles/pages.css';
 import { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { Edit3, Save, Award, BookOpen, Calendar, Users } from 'lucide-react';

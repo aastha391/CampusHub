@@ -1,0 +1,70 @@
+/* login.css */
+.login-root { display: flex; min-height: 100vh; font-family: var(--font-body); }
+.login-left { flex: 1; background: linear-gradient(135deg, #0f172a 0%, #1a1f3a 40%, #0d1b4b 100%); padding: 48px; display: flex; flex-direction: column; position: relative; overflow: hidden; min-width: 0; }
+.login-orb1 { position: absolute; top: -80px; left: -80px; width: 320px; height: 320px; border-radius: 50%; background: rgba(67,97,238,0.15); filter: blur(60px); }
+.login-orb2 { position: absolute; bottom: 0; right: -60px; width: 280px; height: 280px; border-radius: 50%; background: rgba(114,9,183,0.15); filter: blur(60px); }
+.login-logo { position: relative; margin-bottom: 40px; display: flex; align-items: center; gap: 12px; }
+.login-logo-icon { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, #4361ee, #7209b7); display: flex; align-items: center; justify-content: center; animation: float 3s ease-in-out infinite; }
+.login-logo-name { font-family: var(--font-display); font-weight: 800; font-size: 22px; color: white; }
+.login-headline { font-family: var(--font-display); font-size: 38px; font-weight: 800; color: white; line-height: 1.15; margin-bottom: 16px; }
+.login-desc { color: #94a3b8; font-size: 16px; line-height: 1.7; margin-bottom: 36px; max-width: 420px; }
+.login-stats { display: flex; gap: 28px; margin-bottom: 40px; flex-wrap: wrap; }
+.login-stat-val { font-family: var(--font-display); font-size: 24px; font-weight: 800; color: white; }
+.login-stat-label { font-size: 12px; color: #64748b; }
+.login-features { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; max-width: 480px; }
+.login-feature { border-radius: 10px; padding: 12px; cursor: default; transition: all 0.25s ease; }
+.login-feature-title { font-size: 12px; font-weight: 700; color: white; margin-bottom: 2px; }
+.login-feature-desc { font-size: 11px; color: #64748b; }
+.login-right { width: 460px; flex-shrink: 0; background: white; display: flex; flex-direction: column; justify-content: center; padding: 48px 40px; overflow-y: auto; }
+.login-form-title { font-family: var(--font-display); font-size: 26px; font-weight: 800; margin-bottom: 6px; }
+.login-role-tabs { display: flex; gap: 8px; margin-bottom: 24px; background: var(--bg-primary); padding: 4px; border-radius: 10px; }
+.login-role-tab { flex: 1; padding: 8px; border: none; border-radius: 8px; cursor: pointer; font-family: var(--font-body); font-weight: 600; font-size: 13px; transition: all 0.2s; }
+.login-demo-box { background: var(--bg-primary); border-radius: 12px; padding: 16px; }
+.login-demo-btn { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-family: var(--font-body); transition: all 0.2s; width: 100%; margin-bottom: 8px; }
+.login-demo-btn:hover { border-color: var(--accent-blue); }
+
+/* profile.css */
+.profile-root { max-width: 700px; }
+.profile-card { background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border); padding: 28px; margin-bottom: 20px; }
+.profile-header { display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; }
+.profile-stats-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 20px; }
+.profile-stat-card { background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border); padding: 18px; text-align: center; }
+.profile-rsvp-item { display: flex; align-items: center; gap: 12px; padding: 10px; background: var(--bg-primary); border-radius: 10px; margin-bottom: 8px; }
+
+/* hackathons.css */
+.hackathon-list { display: flex; flex-direction: column; gap: 12px; }
+.hackathon-card { background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border); padding: 20px; transition: all 0.25s; }
+.hackathon-card:hover { box-shadow: var(--shadow-md); }
+.hackathon-card-inner { display: flex; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+.hackathon-info { flex: 1; min-width: 200px; }
+.hackathon-stats { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+.hackathon-stat { text-align: center; }
+.hackathon-stat-label { font-size: 11px; color: var(--text-muted); margin-bottom: 2px; }
+.hackathon-stat-value { font-size: 14px; font-weight: 700; }
+.hackathon-teammates { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+
+/* qna.css */
+.qna-tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+.qna-list { display: flex; flex-direction: column; gap: 10px; }
+.qna-card { background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border); padding: 18px; }
+.qna-card-inner { display: flex; gap: 14px; }
+.qna-upvote { background: var(--bg-primary); border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 2px; flex-shrink: 0; }
+.qna-meta { display: flex; gap: 12px; align-items: center; }
+.lostfound-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+.lostfound-card { background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border); padding: 18px; transition: all 0.25s; }
+.lostfound-card:hover { box-shadow: var(--shadow-md); }
+
+/* resources.css */
+.resources-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 28px; }
+.resource-card { background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border); padding: 22px; cursor: pointer; transition: all 0.25s; }
+.resource-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.resource-icon { font-size: 28px; margin-bottom: 12px; }
+.resource-title { font-weight: 700; font-size: 16px; margin-bottom: 6px; }
+.resource-desc { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.4; }
+.resource-footer { display: flex; justify-content: space-between; align-items: center; }
+.quicklinks-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+.quicklink-card { background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border); padding: 16px; display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; transition: all 0.25s; }
+.quicklink-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+
+@media (max-width: 1024px) { .resources-grid { grid-template-columns: repeat(2,1fr); } .quicklinks-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 640px) { .resources-grid, .lostfound-grid, .quicklinks-grid, .profile-stats-grid { grid-template-columns: 1fr; } }

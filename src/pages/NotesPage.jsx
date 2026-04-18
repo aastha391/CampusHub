@@ -1,3 +1,4 @@
+import '../styles/notes.css';
 import { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { Download, Star, Search, Upload, Plus } from 'lucide-react';

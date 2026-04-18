@@ -1,3 +1,4 @@
+import '../styles/pages.css';
 import { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { Trophy, Users, Clock, Wifi, MapPin, Plus, UserPlus } from 'lucide-react';

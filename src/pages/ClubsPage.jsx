@@ -1,3 +1,4 @@
+import '../styles/clubs.css';
 import { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { Star, AlertTriangle, Users, Plus, Check } from 'lucide-react';

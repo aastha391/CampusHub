@@ -1,3 +1,4 @@
+import '../styles/events.css';
 import { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { Calendar, Clock, MapPin, Users, CheckCircle, Search } from 'lucide-react';
