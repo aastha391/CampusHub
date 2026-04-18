@@ -1,16 +1,99 @@
-# React + Vite
+# ⚡ CampusHub — All-in-One College Life Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Your college life, all in one place.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [campus-hub-flax.vercel.app](https://campus-hub-flax.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎯 What is CampusHub?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+CampusHub is a digital campus ecosystem built to solve the chaos of college life — scattered event info, missed club announcements, unorganized notes, and poor resource sharing. It brings everything under one roof for students, club heads, and admins.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+### 🎓 Student
+- Browse and RSVP to campus events
+- Download and rate notes shared by seniors
+- Join clubs and get announcements
+- Explore hackathons and form teams
+- Anonymous Q&A board and Lost & Found
+- Personal profile with skills and branch info
+
+### 📢 Club Head
+- Post announcements (sent for admin approval)
+- Add and manage club events
+- View club members and engagement
+- Share notes with students
+
+### 🛡️ Admin
+- Full event management (add / edit / delete)
+- Approve or reject notes and announcements
+- View RSVP analytics
+- Manage user roles (student, club head, admin)
+
+### 🌐 Platform-wide
+- Role-based login (Student / Club Head / Admin)
+- Animated 3D login page with intro sequence
+- Notification system with unread count
+- Search and filter across events, notes, clubs
+- Hackathon team formation board with skill tags
+- Responsive UI with smooth animations
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | React 18 + Vite |
+| Styling | CSS Modules (per-page) |
+| State Management | React Context API |
+| Routing | Page-based state (no React Router) |
+| Deployment | Vercel |
+
+---
+
+## 🔐 Demo Login
+
+On the login page, select your role (Student / Club Head / Admin) — credentials are auto-filled for demo access.
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/       # Layout, Sidebar, Toast, Navbar
+├── context/
+│   └── AppContext.jsx # Global state — auth, events, notes, clubs, etc.
+├── pages/
+│   ├── Login.jsx
+│   ├── Dashboard.jsx  # Role-specific dashboards
+│   ├── EventsPage.jsx
+│   ├── ClubsPage.jsx
+│   ├── NotesPage.jsx
+│   ├── HackathonsPage.jsx
+│   ├── QnAPage.jsx
+│   ├── ResourcesPage.jsx
+│   ├── ProfilePage.jsx
+│   └── AdminPage.jsx
+└── styles/           # Per-page CSS modules
+    ├── dashboard.css
+    ├── events.css
+    ├── clubs.css
+    ├── notes.css
+    ├── admin.css
+    ├── pages.css
+    └── Login.css
+```
+
+---
+
+## 👩‍💻 Built By
+
+**Aastha Sheoran** — [github.com/aastha391](https://github.com/aastha391)
+
+Built with React + Vite · 2025
